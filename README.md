@@ -22,7 +22,7 @@ plt.axis("off")
 plt.imshow(wheel.draw_wheel(step=15,shades=12))
 plt.show()
 ```
-Also, we can get dictionary of rgb values, with hue angles as keys with list of rgb values of hues for this angle
+Also, we can get dictionary of rgb values, with hue angles as keys with list of rgb values of colors for this angle. Red color starts at 0 value of an angle.
 ```
 rgb = wheel.get_rgb()
 ```
