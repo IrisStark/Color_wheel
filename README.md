@@ -29,4 +29,5 @@ wheel = color_wheel(luminocity=True)
 image = wheel.draw_wheel(step=6,shades=6)
 rgb = wheel.get_rgb()
 ```
+More examples of usage https://github.com/IrisStark/Color_wheel/blob/master/Examples_color_wheel.ipynb
 More about color theory:  http://learn.leighcotnoir.com/artspeak/elements-color/hue-value-saturation/
