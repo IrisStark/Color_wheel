@@ -9,7 +9,7 @@ wheel =  color_wheel(luminosity=False, saturation=False, grey_wheel = False)
 ```
 To get an image pixel values we can call method draw_wheel. It returns PIL.Image.Image object. Step - how many changes of luminocity and/or saturation we want, shades - how many different hues we want. <br>
 Luminocity value - 0 means no light, everything is black, 1 - the brightes colors. <br>
-Saturation_value - 0 means everythin is white, 1 - no change to colors.
+Saturation_value - 0 means everything is white, 1 - no change to colors.
 ```
 wheel.draw_wheel(step = 6,shades = 12,luminocity_value = 1,saturation_value = 1)
 ```
