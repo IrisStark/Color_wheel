@@ -13,6 +13,14 @@ class color_wheel():
 
         
     def draw_wheel(self,step = 6,shades = 12,luminocity_value = 1,saturation_value = 1):
+        
+        #catching if somebody put shades 0 or step 1 and we get division by zero exception
+        if shades==0:
+            shades=1
+        if step==1:
+            self.luminocity=False
+            self.saturation=False
+        
         im = Image.new("RGB", (300,300),(255,255,255))
         radius = min(im.size)/2
         centre = im.size[0]/2, im.size[1]/2
