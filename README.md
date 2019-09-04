@@ -22,8 +22,11 @@ plt.axis("off")
 plt.imshow(wheel.draw_wheel(step=15,shades=12))
 plt.show()
 ```
-Also, we can get dictionary of rgb values, with hue angles as keys with list of rgb values of colors for this angle. Red color starts at 0 value of an angle.
+Also, we can get dictionary of rgb values, with hue angles as keys with list of rgb values of colors for this angle. Red color starts at 0 value of an angle.<br>
+To get rgb values at first we need to call draw_wheel for an object and only then call get_rgb.
 ```
+wheel = color_wheel(luminocity=True)
+image = wheel.draw_wheel(step=6,shades=6)
 rgb = wheel.get_rgb()
 ```
 More about color theory:  http://learn.leighcotnoir.com/artspeak/elements-color/hue-value-saturation/
