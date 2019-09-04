@@ -26,3 +26,4 @@ Also, we can get dictionary of rgb values, with hue angles as keys with list of 
 ```
 rgb = wheel.get_rgb()
 ```
+More about color theory:  http://learn.leighcotnoir.com/artspeak/elements-color/hue-value-saturation/
