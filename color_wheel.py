@@ -1,6 +1,7 @@
 from PIL import Image
 import colorsys
 import math
+import numpy as np
 
 class color_wheel():
     def __init__(self,grey_wheel=False,luminocity = False,saturation = False):
