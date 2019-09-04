@@ -13,6 +13,9 @@ class color_wheel():
 
         
     def draw_wheel(self,step = 6,shades = 12,luminocity_value = 1,saturation_value = 1):
+        #was designed to work with python 3, but to make python 2 compatible
+        step = float(step)
+        shades = float(shades)
         
         #catching if somebody put shades 0 or step 1 and we get division by zero exception
         if shades==0:
