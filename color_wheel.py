@@ -118,6 +118,6 @@ class color_wheel():
     
     def get_rgb(self):
         for key, value in self.rgb_dict.items():
-            self.rgb_dict[key]=list(set(value))
+            self.rgb_dict[key]=list(sorted(set(value), key=value.index))
         return self.rgb_dict
     
